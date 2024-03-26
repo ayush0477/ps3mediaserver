@@ -20,3 +20,4 @@ src/main/external-resources/transcode-tools/transcode-tools-*
 src/main/external-resources/transcode-tools/linux/*
 src/main/external-resources/transcode-tools/osx/*
 src/main/external-resources/transcode-tools/win32/*
+/bin/
