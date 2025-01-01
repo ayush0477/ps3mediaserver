@@ -1449,19 +1449,15 @@
 
 										<!-- Download and unpack binaries. -->
 										<get src="${transcode-tools.download.url}/linux/${transcode-tools.linux.filename}"
-												dest="${external-resources.transcode-tools.directory}/${transcode-tools.linux.filename}"
-												usetimestamp="true" />
-
+											 dest="${external-resources.transcode-tools.directory}/${transcode-tools.linux.filename}"
+											 usetimestamp="true" />
 										<untar src="${external-resources.transcode-tools.directory}/${transcode-tools.linux.filename}"
-												dest="${external-resources.transcode-tools.directory}/linux"
-												compression="gzip"
-												stripAbsolutePathSpec="true"
-												overwrite="true"
-												failOnEmptyArchive="true">
+											   dest="${external-resources.transcode-tools.directory}/linux"
+											   compression="gzip"
+											   stripAbsolutePathSpec="true"
+											   overwrite="true"
+											   failOnEmptyArchive="true">
 										</untar>
-
-										<!-- Make all downloaded binaries executable. -->
-										<chmod dir="${external-resources.transcode-tools.directory}/linux" perm="a+x" includes="*" />
 									</target>
 								</configuration>
 							</execution>
